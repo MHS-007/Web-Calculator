@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="calc.png" type="image/png">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="main">
+        <center><h1>Calculator</h1></center>
+        <section class="container">
+            <input type="text" id="result" readonly>
+                <div>
+                    <button id="clear" onclick="clearField()">C</button>
+                    <button id="delete" onclick="deleteDigit()">Del</button>
+                    <button class="operators" value="%" onclick="displayOperators(this)">%</button>
+                    <button class="operators" value="/" onclick="displayOperators(this)">/</button>
+
+                    <button class="btn" id="7" value="7" onclick="displayNum(this)">7</button>
+                    <button class="btn" id="8" value="8" onclick="displayNum(this)">8</button>
+                    <button class="btn" id="9" value="9" onclick="displayNum(this)">9</button>
+                    <button class="operators"  value="x" onclick="displayOperators(this)">x</button>
+                
+                    <button class="btn" id="4" value="4" onclick="displayNum(this)">4</button>
+                    <button class="btn" id="5" value="5" onclick="displayNum(this)">5</button>
+                    <button class="btn" id="6" value="6" onclick="displayNum(this)">6</button>
+                    <button class="operators"  value="-" onclick="displayOperators(this)">-</button>
+                
+                    <button class="btn" id="1" value="1" onclick="displayNum(this)">1</button>
+                    <button class="btn" id="2" value="2" onclick="displayNum(this)">2</button>
+                    <button class="btn" id="3" value="3" onclick="displayNum(this)">3</button>
+                    <button class="operators"  value="+" onclick="displayOperators(this)">+</button>
+                
+                    <button class="btn" id="00" onclick="displayDoubleZeros()">00</button>
+                    <button class="btn" id="0" value="0" onclick="displayNum(this)">0</button>
+                    <button class="btn" onclick="displayDecimal()"><b>.</b></button>
+                    <button id="equal" onclick="calculate()">=</button>
+                </div>
+        </section>
+</section>
+
+    <script src="index.js"></script>
+</body>
+</html>
